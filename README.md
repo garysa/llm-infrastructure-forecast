@@ -53,6 +53,12 @@ Training data exhaustion analysis:
 - **Synthetic data trap**: Model collapse degrades quality each generation
 - **Conclusion**: Scaling era (2019-2024) may be over
 
+### 9. AI Sector Evolution: Cloud vs Local (2026-2029)
+Year-by-year projection of deployment shifts:
+- **2026**: Cloud dominant (Public 75%, Govt 40%, Corp 65%)
+- **2029**: Local dominant (Public 35%, Govt 10%, Corp 25%)
+- **Drivers**: Regulations, security incidents, open source maturity, cost crossover
+
 ## Files
 | File | Description |
 |------|-------------|

@@ -445,4 +445,89 @@ The scaling era (2019-2024) may be over. What comes next is uncertain.
 
 ---
 
+## 9. AI Sector Evolution: Cloud vs Local by Year (2026-2029)
+
+Data sovereignty and security concerns will drive a major shift from cloud-based AI to local/on-prem deployments across all sectors.
+
+### Sector Breakdown: Cloud vs Local
+
+![Sector Evolution](sector_evolution.png)
+
+### Year-by-Year Projection
+
+![Sector Bars](sector_bars.png)
+
+#### 2026 (Current State)
+
+| Sector | Cloud | Local | Notes |
+|--------|-------|-------|-------|
+| **Public** | 75% | 25% | Education, research still cloud-dependent |
+| **Government** | 40% | 60% | Security concerns already driving local |
+| **Corporate** | 65% | 35% | Cost/convenience favors cloud for now |
+
+#### 2027 (Transition Begins)
+
+| Sector | Cloud | Local | Notes |
+|--------|-------|-------|-------|
+| **Public** | 60% | 40% | Open source models enable local deployment |
+| **Government** | 30% | 70% | Regulatory mandates accelerate |
+| **Corporate** | 50% | 50% | Data breach fears, IP protection |
+
+#### 2028 (Major Shift)
+
+| Sector | Cloud | Local | Notes |
+|--------|-------|-------|-------|
+| **Public** | 45% | 55% | Local becomes viable for education |
+| **Government** | 15% | 85% | Near-complete localization |
+| **Corporate** | 35% | 65% | On-prem becomes standard for sensitive data |
+
+#### 2029 (New Equilibrium)
+
+| Sector | Cloud | Local | Notes |
+|--------|-------|-------|-------|
+| **Public** | 35% | 65% | Cloud only for non-sensitive, general use |
+| **Government** | 10% | 90% | Only unclassified, public-facing on cloud |
+| **Corporate** | 25% | 75% | Cloud reserved for burst/experimental |
+
+### Country-Level Patterns
+
+![Country Breakdown](country_breakdown.png)
+
+| Country Type | Cloud (Foreign) | Local/Domestic | Notes |
+|--------------|-----------------|----------------|-------|
+| **Developed Democracies** (US, EU, Japan) | 25% | 55% | Hybrid approach, ally-compatible |
+| **Authoritarian States** (China, Russia) | 5% | 70% | Near-total localization, state cloud |
+| **Developing Nations** (India, Brazil, Africa) | 45% | 20% | Cloud-dependent, mobile-first |
+
+### Key Drivers of Localization
+
+1. **Regulatory Mandates**
+   - GDPR (EU): Data must stay in region
+   - China: Complete data localization required
+   - US: Federal contractors must use approved systems
+
+2. **Security Incidents**
+   - Each major breach accelerates local adoption
+   - Corporate espionage concerns
+   - Nation-state attack fears
+
+3. **Open Source Maturity**
+   - Llama, Mistral, etc. make local viable
+   - No API dependency
+   - Customization possible
+
+4. **Cost Crossover**
+   - On-prem becomes cheaper at scale
+   - Predictable costs vs variable API pricing
+   - Amortized hardware investments
+
+### Implications
+
+- **OpenAI/Anthropic model challenged**: API revenue declines as enterprises go local
+- **Hardware demand shifts**: More distributed, less hyperscaler concentration
+- **Talent distribution**: AI expertise needed in every organization, not just Big Tech
+- **Geopolitical fragmentation**: AI capabilities become tied to national infrastructure
+
+---
+
 *Generated: February 2026*

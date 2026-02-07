@@ -12,6 +12,7 @@ Discussion notes and analysis on LLM infrastructure trends.
 6. Power bottleneck - China vs US/West 7-year race scenario
 7. Scaling limits - Moore's Law parallel, what if AGI doesn't scale
 8. Data wall - training data exhaustion, synthetic data collapse
+9. Sector evolution - Cloud vs Local by year (2026-2029) with country breakdown
 
 ## Files
 - `llm_forecast_discussion.md` - Full discussion in markdown

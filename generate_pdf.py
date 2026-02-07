@@ -399,6 +399,47 @@ story.append(Paragraph("• <b>Open source catches up</b>: Diminishing returns l
 story.append(Spacer(1, 6))
 
 story.append(Paragraph("The scaling era (2019-2024) may be over. What comes next is uncertain.", styles['Body']))
+story.append(Spacer(1, 12))
+
+# Section 9
+story.append(Paragraph("9. AI Sector Evolution: Cloud vs Local (2026-2029)", styles['H2']))
+story.append(Paragraph("Data sovereignty and security concerns will drive a major shift from cloud-based AI to local/on-prem deployments.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Year-by-Year Projection", styles['H3']))
+data9 = [
+    ['Year', 'Public Cloud', 'Govt Cloud', 'Corp Cloud', 'Trend'],
+    ['2026', '75%', '40%', '65%', 'Cloud dominant'],
+    ['2027', '60%', '30%', '50%', 'Transition begins'],
+    ['2028', '45%', '15%', '35%', 'Local majority'],
+    ['2029', '35%', '10%', '25%', 'Local dominant'],
+]
+t9 = Table(data9, colWidths=[0.8*inch, 1.1*inch, 1.1*inch, 1.1*inch, 1.4*inch])
+t9.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, 1), colors.lightgreen),
+    ('BACKGROUND', (0, 4), (-1, 4), colors.lightcoral),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t9)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Country-Level Patterns (2029)", styles['H3']))
+story.append(Paragraph("• <b>Developed democracies</b> (US, EU, Japan): 25% cloud, 55% local, 20% hybrid", styles['MyBullet']))
+story.append(Paragraph("• <b>Authoritarian states</b> (China, Russia): 5% foreign cloud, 70% local, 25% state cloud", styles['MyBullet']))
+story.append(Paragraph("• <b>Developing nations</b> (India, Brazil, Africa): 45% cloud-dependent, 20% local", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Key Drivers", styles['H3']))
+story.append(Paragraph("• <b>Regulatory mandates</b>: GDPR, China data laws, US federal requirements", styles['MyBullet']))
+story.append(Paragraph("• <b>Security incidents</b>: Each breach accelerates local adoption", styles['MyBullet']))
+story.append(Paragraph("• <b>Open source maturity</b>: Llama, Mistral make local deployment viable", styles['MyBullet']))
+story.append(Paragraph("• <b>Cost crossover</b>: On-prem becomes cheaper at scale", styles['MyBullet']))
 story.append(Spacer(1, 20))
 
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))
