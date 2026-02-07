@@ -196,9 +196,62 @@ story.append(Spacer(1, 6))
 
 story.append(Paragraph("The Key Variable", styles['H3']))
 story.append(Paragraph("Architecture stability determines ASIC viability. If transformers remain the standard for 5+ years, ASICs will take over inference. If major shifts occur (like Mamba/SSMs gaining traction), GPU flexibility remains valuable.", styles['Body']))
+story.append(Spacer(1, 12))
+
+# Section 5
+story.append(Paragraph("5. The Fragmented AGI Future: Data Sovereignty Forces Decentralization", styles['H2']))
+story.append(Paragraph("The current centralized API model (everyone sends data to OpenAI/Anthropic/Google) is unlikely to survive the path to AGI. Data security requirements in a capitalist model will force fragmentation.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Why Centralized APIs Won't Scale to AGI", styles['H3']))
+story.append(Paragraph("• <b>Data is the moat</b>: Corporations won't send proprietary data to potential competitors", styles['MyBullet']))
+story.append(Paragraph("• <b>Regulatory pressure</b>: GDPR, HIPAA, national security laws prohibit cross-border data flows", styles['MyBullet']))
+story.append(Paragraph("• <b>Competitive risk</b>: Training data leakage could destroy competitive advantage", styles['MyBullet']))
+story.append(Paragraph("• <b>National security</b>: Governments won't route sensitive queries through foreign systems", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Emerging Tiered Model", styles['H3']))
+data5 = [
+    ['Tier', 'Users', 'Model Type', 'Data Policy'],
+    ['Tier 1: Public', 'Education, researchers, public', 'Open source (Llama, Mistral)', 'Public data only'],
+    ['Tier 2: Enterprise', 'Corporations', 'Private fine-tuned, on-prem', 'Data stays internal'],
+    ['Tier 3: Regulated', 'Healthcare, finance, legal', 'Certified & audited', 'Compliance-first'],
+    ['Tier 4: Sovereign', 'Governments, defense', 'Air-gapped, national', 'Complete isolation'],
+]
+t5 = Table(data5, colWidths=[1.3*inch, 1.5*inch, 1.8*inch, 1.4*inch])
+t5.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 8),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t5)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Market Projection", styles['H3']))
+story.append(Paragraph("The centralized API model (currently ~85% of AI compute market) will decline to ~10% by 2032 as enterprise moves compute on-premises, governments mandate sovereign AI capabilities, and open models become capable enough for public use.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Google Analogy", styles['H3']))
+story.append(Paragraph("Just as Google Search is 'free' for public use while enterprises pay for private search appliances and governments build classified systems, AGI will fragment into:", styles['Body']))
+story.append(Paragraph("• <b>Public AGI</b>: Ad-supported or government-subsidized for education/general use", styles['MyBullet']))
+story.append(Paragraph("• <b>Enterprise AGI</b>: Licensed, on-prem, fine-tuned on proprietary data", styles['MyBullet']))
+story.append(Paragraph("• <b>Sovereign AGI</b>: National AI capabilities, completely isolated", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Implications", styles['H3']))
+story.append(Paragraph("• <b>No single AGI monopoly</b>: Unlike search (Google dominance), AGI will be fragmented by design", styles['MyBullet']))
+story.append(Paragraph("• <b>NVIDIA benefits</b>: Sells hardware to all tiers, not dependent on any single provider", styles['MyBullet']))
+story.append(Paragraph("• <b>Open source critical</b>: Public tier depends on open models (Llama successors)", styles['MyBullet']))
+story.append(Paragraph("• <b>Talent fragmentation</b>: AI researchers spread across government, enterprise, public sectors", styles['MyBullet']))
 story.append(Spacer(1, 20))
 
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))
+story.append(Paragraph("<i>See agi_future_tiers.png and agi_market_projection.png for visualizations</i>", styles['Body']))
 
 doc.build(story)
 print("PDF created successfully!")

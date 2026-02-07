@@ -124,4 +124,52 @@ Architecture stability determines ASIC viability. If transformers remain the sta
 
 ---
 
+## 5. The Fragmented AGI Future: Data Sovereignty Forces Decentralization
+
+The current centralized API model (everyone sends data to OpenAI/Anthropic/Google) is unlikely to survive the path to AGI. Data security requirements in a capitalist model will force fragmentation.
+
+### Why Centralized APIs Won't Scale to AGI
+
+- **Data is the moat**: Corporations won't send proprietary data to potential competitors
+- **Regulatory pressure**: GDPR, HIPAA, national security laws prohibit cross-border data flows
+- **Competitive risk**: Training data leakage could destroy competitive advantage
+- **National security**: Governments won't route sensitive queries through foreign systems
+
+### The Emerging Tiered Model
+
+![AGI Future Tiers](agi_future_tiers.png)
+
+| Tier | Users | Model Type | Data Policy |
+|------|-------|------------|-------------|
+| **Tier 1: Public/Open** | Education, researchers, general public | Open source (Llama, Mistral) | Public data only |
+| **Tier 2: Enterprise** | Corporations | Private fine-tuned, on-prem | Data stays internal |
+| **Tier 3: Regulated** | Healthcare, finance, legal | Certified & audited | Compliance-first |
+| **Tier 4: Sovereign** | Governments, defense, intelligence | Air-gapped, national | Complete isolation |
+
+### Market Projection
+
+![Market Projection](agi_market_projection.png)
+
+The centralized API model (currently ~85% of AI compute market) will decline to ~10% by 2032 as:
+- Enterprise moves compute on-premises
+- Governments mandate sovereign AI capabilities
+- Open models become capable enough for public use
+
+### The Google Analogy
+
+Just as Google Search is "free" for public use while enterprises pay for private search appliances and governments build classified systems, AGI will fragment into:
+
+- **Public AGI**: Ad-supported or government-subsidized for education/general use
+- **Enterprise AGI**: Licensed, on-prem, fine-tuned on proprietary data
+- **Sovereign AGI**: National AI capabilities, completely isolated
+
+### Implications
+
+1. **No single AGI monopoly**: Unlike search (Google dominance), AGI will be fragmented by design
+2. **NVIDIA benefits**: Sells hardware to all tiers, not dependent on any single provider
+3. **Open source critical**: Public tier depends on open models (Llama successors)
+4. **Talent fragmentation**: AI researchers spread across government, enterprise, public sectors
+
+---
+
 *Generated: February 2026*

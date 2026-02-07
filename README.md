@@ -25,6 +25,13 @@ Comparing Bitcoin's hardware evolution (CPU → GPU → ASIC) to LLM inference:
 - **Where ASICs will dominate**: Edge devices, high-volume inference, commoditized models
 - **Where GPUs remain**: Training, cloud inference with varied workloads
 
+### 5. The Fragmented AGI Future
+Data sovereignty will force a tiered model:
+- **Tier 1 (Public)**: Open models for education/research
+- **Tier 2 (Enterprise)**: Private on-prem, proprietary data
+- **Tier 3 (Regulated)**: Healthcare, finance, legal - certified models
+- **Tier 4 (Sovereign)**: Government/defense, air-gapped
+
 ## Files
 | File | Description |
 |------|-------------|

@@ -8,6 +8,7 @@ Discussion notes and analysis on LLM infrastructure trends.
 2. ASIC vs GPU dominance in AI compute
 3. Enterprise LLM deployment patterns (hybrid private/public model)
 4. Bitcoin ASIC analogy - comparing hardware evolution patterns
+5. Fragmented AGI future - data sovereignty forces tiered model
 
 ## Files
 - `llm_forecast_discussion.md` - Full discussion in markdown
