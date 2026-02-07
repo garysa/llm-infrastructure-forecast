@@ -1,0 +1,157 @@
+<h1 id="llm-infrastructure-forecast">LLM Infrastructure Forecast</h1>
+<h2 id="what-is-a-tpu">1. What is a TPU?</h2>
+<p>A <strong>TPU (Tensor Processing Unit)</strong> is a custom-designed
+AI accelerator chip developed by Google specifically for machine
+learning workloads.</p>
+<h3 id="key-characteristics">Key Characteristics</h3>
+<ul>
+<li><strong>Purpose-built for ML</strong>: Optimized for matrix
+operations and tensor computations common in neural networks</li>
+<li><strong>High throughput</strong>: Excels at large-scale,
+low-precision (8-bit) matrix multiplications</li>
+<li><strong>Architecture</strong>: Uses a systolic array design that
+efficiently moves data through processing elements</li>
+<li><strong>Power efficient</strong>: Delivers more ML performance per
+watt compared to general-purpose GPUs/CPUs</li>
+</ul>
+<h3 id="tpu-vs-gpu">TPU vs GPU</h3>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>TPU</th>
+<th>GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specialization</td>
+<td>ML-only</td>
+<td>General-purpose parallel computing</td>
+</tr>
+<tr class="even">
+<td>Best for</td>
+<td>Large transformers, inference at scale</td>
+<td>Varied workloads, smaller models</td>
+</tr>
+<tr class="odd">
+<td>Flexibility</td>
+<td>Limited</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="will-asics-dominate-if-llms-become-mainstream">2. Will ASICs
+Dominate if LLMs Become Mainstream?</h2>
+<h3 id="arguments-for-asic-dominance">Arguments For ASIC Dominance</h3>
+<ul>
+<li><strong>Efficiency</strong>: ASICs can be 10-100x more
+power-efficient than GPUs for specific workloads</li>
+<li><strong>Cost at scale</strong>: Once designed, per-unit costs drop
+significantly in high volume</li>
+<li><strong>Inference dominance</strong>: If LLMs become ubiquitous,
+inference will be the bulk of compute—ideal for ASICs</li>
+<li><strong>Edge deployment</strong>: Running models on phones/devices
+almost certainly requires custom silicon</li>
+</ul>
+<h3 id="arguments-against-gpu-resilience">Arguments Against (GPU
+Resilience)</h3>
+<ul>
+<li><strong>Rapid model evolution</strong>: LLM architectures are still
+changing fast (attention variants, MoE, SSMs like Mamba). ASICs take 2-3
+years to design—risky if architectures shift</li>
+<li><strong>NVIDIA’s moat</strong>: CUDA ecosystem, software stack, and
+developer familiarity are deeply entrenched</li>
+<li><strong>Flexibility</strong>: GPUs can run any model; ASICs may
+become obsolete if paradigms change</li>
+<li><strong>Hybrid approaches</strong>: NVIDIA is increasingly adding
+specialized tensor cores—blurring the line</li>
+</ul>
+<h3 id="current-trajectory">Current Trajectory</h3>
+<ul>
+<li>Hyperscalers (Google, Amazon, Microsoft) are building custom chips
+(TPU, Trainium, Maia)</li>
+<li>Startups (Groq, Cerebras, SambaNova) are betting on specialized
+architectures</li>
+<li>NVIDIA still dominates (~80%+ of AI training market)</li>
+</ul>
+<h3 id="likely-outcome">Likely Outcome</h3>
+<p>A mixed ecosystem—ASICs for inference at scale and edge, GPUs for
+training and flexibility. If architectures stabilize, ASICs gain ground.
+If innovation continues rapidly, GPUs remain essential.</p>
+<hr />
+<h2 id="enterprise-llm-deployment-hybrid-model">3. Enterprise LLM
+Deployment: Hybrid Model</h2>
+<p>The likely future is a <strong>hybrid model</strong> where companies
+run private small LLMs for routine tasks and use public cloud LLMs for
+heavy compute. This mirrors how companies handle compute generally
+(on-prem + cloud).</p>
+<h3 id="why-private-small-llms-make-sense">Why Private Small LLMs Make
+Sense</h3>
+<ul>
+<li><strong>Data privacy</strong>: Sensitive data (legal, medical,
+financial, IP) never leaves the network</li>
+<li><strong>Latency</strong>: Local inference is faster for real-time
+applications</li>
+<li><strong>Cost predictability</strong>: Fixed infrastructure
+vs. per-token API costs that can spike</li>
+<li><strong>Customization</strong>: Fine-tuned on proprietary data,
+jargon, workflows</li>
+<li><strong>Compliance</strong>: Easier to meet regulatory requirements
+(GDPR, HIPAA, etc.)</li>
+</ul>
+<h3 id="why-public-llms-for-heavy-compute">Why Public LLMs for Heavy
+Compute</h3>
+<ul>
+<li><strong>Frontier capabilities</strong>: Largest models require
+massive infrastructure</li>
+<li><strong>Occasional use</strong>: Doesn’t justify owning the
+hardware</li>
+<li><strong>Rapid improvement</strong>: API access means instant
+upgrades without redeployment</li>
+<li><strong>Burst capacity</strong>: Handle spikes without
+over-provisioning</li>
+</ul>
+<h3 id="emerging-deployment-patterns">Emerging Deployment Patterns</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Use Case</th>
+<th>Likely Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Internal chatbots, code assist</td>
+<td>Private small LLM (7B-70B)</td>
+</tr>
+<tr class="even">
+<td>Document search/RAG</td>
+<td>Private, fine-tuned</td>
+</tr>
+<tr class="odd">
+<td>Complex reasoning, research</td>
+<td>Public frontier API</td>
+</tr>
+<tr class="even">
+<td>Customer-facing products</td>
+<td>Hybrid or public</td>
+</tr>
+<tr class="odd">
+<td>Edge/embedded</td>
+<td>Tiny private models (&lt;3B)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-analogy">The Analogy</h3>
+<p>It’s like databases—companies run private databases for core
+operations but use cloud services for analytics, burst workloads, or
+specialized capabilities.</p>
+<hr />
+<p><em>Generated: February 2026</em></p>
