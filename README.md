@@ -59,6 +59,13 @@ Year-by-year projection of deployment shifts:
 - **2029**: Local dominant (Public 35%, Govt 10%, Corp 25%)
 - **Drivers**: Regulations, security incidents, open source maturity, cost crossover
 
+### 10. Summary & Conclusion: AI in 5 Years
+Executive summary and AGI probability analysis:
+- **AGI by 2031**: ~12% probability (weighted average across scenarios)
+- **Primary blockers**: Data exhaustion (90/100), algorithmic ceiling (75/100)
+- **Expected outcome**: 2-3x capability gains, not transformative leap
+- **Key insight**: 2019-2024 may be one-time windfall, not start of exponential growth
+
 ## Files
 | File | Description |
 |------|-------------|

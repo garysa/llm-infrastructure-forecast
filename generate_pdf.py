@@ -442,6 +442,58 @@ story.append(Paragraph("• <b>Open source maturity</b>: Llama, Mistral make loc
 story.append(Paragraph("• <b>Cost crossover</b>: On-prem becomes cheaper at scale", styles['MyBullet']))
 story.append(Spacer(1, 20))
 
+story.append(Spacer(1, 12))
+
+# Section 10 - Conclusion
+story.append(Paragraph("10. Summary & Conclusion: AI in 5 Years and AGI", styles['H2']))
+story.append(Paragraph("Synthesizing all findings into a coherent forecast for 2026-2031.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("5-Year Trajectory", styles['H3']))
+data10 = [
+    ['Year', 'Capability', 'Deployment', 'AGI Prob'],
+    ['2026', 'GPT-4 class', 'Cloud dominant', '0%'],
+    ['2028', 'Scaling wall', 'Hybrid standard', '5%'],
+    ['2031', 'Uncertain', 'Regional blocs', '15%'],
+]
+t10 = Table(data10, colWidths=[0.8*inch, 1.3*inch, 1.3*inch, 1*inch])
+t10.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t10)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("AGI Probability: ~12% by 2031 (weighted average)", styles['H3']))
+story.append(Paragraph("• <b>Optimistic scenario</b>: 35% (scaling works, data problem solved)", styles['MyBullet']))
+story.append(Paragraph("• <b>Moderate scenario</b>: 15% (gradual algorithmic progress)", styles['MyBullet']))
+story.append(Paragraph("• <b>Pessimistic scenario</b>: 5% (data wall binding, no breakthroughs)", styles['MyBullet']))
+story.append(Paragraph("• <b>Plateau scenario</b>: 2% (stagnation, fundamental limits)", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Key Bottlenecks Preventing AGI", styles['H3']))
+story.append(Paragraph("• <b>Training data exhaustion</b> (90/100): Primary blocker—internet consumed", styles['MyBullet']))
+story.append(Paragraph("• <b>Algorithmic ceiling</b> (75/100): Transformers may be near-optimal", styles['MyBullet']))
+story.append(Paragraph("• <b>Unknown unknowns</b> (80/100): Fundamental limits undiscovered", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Bottom Line", styles['H3']))
+story.append(Paragraph("<b>AGI by 2031 is UNLIKELY (~12%)</b>. AI will be more capable (2-3x, not 100x) but incrementally. AI will be more fragmented—regional, sectoral, organizational silos replacing centralized APIs.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Winners: Hardware makers, open source, enterprises with data moats, countries with energy infrastructure.", styles['Body']))
+story.append(Paragraph("Losers: Pure API business models, scaling assumptions, imminent AGI predictions.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The 2019-2024 period may be remembered as a <b>one-time windfall</b> from transformers + scaling + internet data. What comes next is uncertain—but likely <b>evolution, not revolution</b>.", styles['Body']))
+story.append(Spacer(1, 20))
+
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))
 story.append(Paragraph("<i>See PNG files for all visualizations</i>", styles['Body']))
 

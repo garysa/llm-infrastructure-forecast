@@ -13,6 +13,7 @@ Discussion notes and analysis on LLM infrastructure trends.
 7. Scaling limits - Moore's Law parallel, what if AGI doesn't scale
 8. Data wall - training data exhaustion, synthetic data collapse
 9. Sector evolution - Cloud vs Local by year (2026-2029) with country breakdown
+10. Summary & Conclusion - 5-year forecast, AGI probability (~12% by 2031)
 
 ## Files
 - `llm_forecast_discussion.md` - Full discussion in markdown
