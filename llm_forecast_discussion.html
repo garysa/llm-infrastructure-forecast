@@ -154,4 +154,96 @@ over-provisioning</li>
 operations but use cloud services for analytics, burst workloads, or
 specialized capabilities.</p>
 <hr />
+<h2 id="the-bitcoin-asic-analogy-will-history-repeat">4. The Bitcoin
+ASIC Analogy: Will History Repeat?</h2>
+<p>Bitcoin mining evolved from CPUs → GPUs → FPGAs → ASICs, with ASICs
+now dominating completely. Will LLM inference follow the same path?</p>
+<h3 id="why-bitcoin-asics-dominated-completely">Why Bitcoin ASICs
+Dominated Completely</h3>
+<ul>
+<li><strong>Single, fixed algorithm</strong>: SHA-256 never changes</li>
+<li><strong>Pure economics</strong>: Only metric is hashes per watt per
+dollar</li>
+<li><strong>No flexibility needed</strong>: The workload is 100%
+predictable forever</li>
+<li><strong>Winner-take-all</strong>: Efficiency directly equals
+profit</li>
+</ul>
+<h3 id="why-llm-asics-wont-dominate-as-completely">Why LLM ASICs Won’t
+Dominate as Completely</h3>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 39%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Bitcoin</th>
+<th>LLMs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Algorithm stability</td>
+<td>Fixed forever</td>
+<td>Evolving (attention → MoE → SSM?)</td>
+</tr>
+<tr class="even">
+<td>Workload variety</td>
+<td>One operation</td>
+<td>Many (different models, quantizations, batch sizes)</td>
+</tr>
+<tr class="odd">
+<td>Market maturity</td>
+<td>15+ years</td>
+<td>~3 years</td>
+</tr>
+<tr class="even">
+<td>Upgrade cycle</td>
+<td>Rare algorithm changes</td>
+<td>New architectures yearly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="where-llm-asics-will-likely-dominate">Where LLM ASICs Will
+Likely Dominate</h3>
+<ul>
+<li><strong>Edge devices</strong> (phones, cars, IoT): ASICs will
+dominate—battery life is critical</li>
+<li><strong>High-volume inference</strong>: Running the same 7B model
+billions of times justifies custom silicon</li>
+<li><strong>Commoditized models</strong>: Once a model becomes “good
+enough” and stable (like Llama-class), ASICs become viable</li>
+</ul>
+<h3 id="likely-pattern-by-use-case">Likely Pattern by Use Case</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Use Case</th>
+<th>Dominant Hardware</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Training</td>
+<td>GPUs (too dynamic)</td>
+</tr>
+<tr class="even">
+<td>Large inference (cloud)</td>
+<td>Mix of GPUs + specialized accelerators</td>
+</tr>
+<tr class="odd">
+<td>Small inference (edge)</td>
+<td>ASICs (similar to Bitcoin)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-key-variable">The Key Variable</h3>
+<p>Architecture stability determines ASIC viability. If transformers
+remain the standard for 5+ years, ASICs will take over inference. If
+major shifts occur (like Mamba/SSMs gaining traction), GPU flexibility
+remains valuable.</p>
+<hr />
 <p><em>Generated: February 2026</em></p>

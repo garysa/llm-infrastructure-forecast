@@ -19,6 +19,12 @@ Companies will likely run:
 - **Private small LLMs (7B-70B)**: Internal tools, sensitive data, fine-tuned models
 - **Public frontier APIs**: Complex reasoning, burst capacity, cutting-edge capabilities
 
+### 4. The Bitcoin ASIC Analogy
+Comparing Bitcoin's hardware evolution (CPU → GPU → ASIC) to LLM inference:
+- **Key difference**: Bitcoin has a fixed algorithm; LLM architectures are still evolving
+- **Where ASICs will dominate**: Edge devices, high-volume inference, commoditized models
+- **Where GPUs remain**: Training, cloud inference with varied workloads
+
 ## Files
 | File | Description |
 |------|-------------|

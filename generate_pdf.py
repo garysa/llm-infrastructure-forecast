@@ -131,6 +131,71 @@ story.append(Spacer(1, 12))
 
 story.append(Paragraph("The Analogy", styles['H3']))
 story.append(Paragraph("It's like databases—companies run private databases for core operations but use cloud services for analytics, burst workloads, or specialized capabilities.", styles['Body']))
+story.append(Spacer(1, 12))
+
+# Section 4
+story.append(Paragraph("4. The Bitcoin ASIC Analogy: Will History Repeat?", styles['H2']))
+story.append(Paragraph("Bitcoin mining evolved from CPUs → GPUs → FPGAs → ASICs, with ASICs now dominating completely. Will LLM inference follow the same path?", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Why Bitcoin ASICs Dominated Completely", styles['H3']))
+story.append(Paragraph("• <b>Single, fixed algorithm</b>: SHA-256 never changes", styles['MyBullet']))
+story.append(Paragraph("• <b>Pure economics</b>: Only metric is hashes per watt per dollar", styles['MyBullet']))
+story.append(Paragraph("• <b>No flexibility needed</b>: The workload is 100% predictable forever", styles['MyBullet']))
+story.append(Paragraph("• <b>Winner-take-all</b>: Efficiency directly equals profit", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Why LLM ASICs Won't Dominate as Completely", styles['H3']))
+data3 = [
+    ['Factor', 'Bitcoin', 'LLMs'],
+    ['Algorithm stability', 'Fixed forever', 'Evolving (attention → MoE → SSM?)'],
+    ['Workload variety', 'One operation', 'Many (models, quantizations, batch sizes)'],
+    ['Market maturity', '15+ years', '~3 years'],
+    ['Upgrade cycle', 'Rare algorithm changes', 'New architectures yearly'],
+]
+t3 = Table(data3, colWidths=[1.5*inch, 2*inch, 2.5*inch])
+t3.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t3)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Where LLM ASICs Will Likely Dominate", styles['H3']))
+story.append(Paragraph("• <b>Edge devices</b> (phones, cars, IoT): ASICs will dominate—battery life is critical", styles['MyBullet']))
+story.append(Paragraph("• <b>High-volume inference</b>: Running the same 7B model billions of times justifies custom silicon", styles['MyBullet']))
+story.append(Paragraph("• <b>Commoditized models</b>: Once a model becomes stable (like Llama-class), ASICs become viable", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Likely Pattern by Use Case", styles['H3']))
+data4 = [
+    ['Use Case', 'Dominant Hardware'],
+    ['Training', 'GPUs (too dynamic)'],
+    ['Large inference (cloud)', 'Mix of GPUs + specialized accelerators'],
+    ['Small inference (edge)', 'ASICs (similar to Bitcoin)'],
+]
+t4 = Table(data4, colWidths=[2.5*inch, 3*inch])
+t4.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t4)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Key Variable", styles['H3']))
+story.append(Paragraph("Architecture stability determines ASIC viability. If transformers remain the standard for 5+ years, ASICs will take over inference. If major shifts occur (like Mamba/SSMs gaining traction), GPU flexibility remains valuable.", styles['Body']))
 story.append(Spacer(1, 20))
 
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))

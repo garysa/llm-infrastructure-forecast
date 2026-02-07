@@ -84,4 +84,44 @@ It's like databases—companies run private databases for core operations but us
 
 ---
 
+## 4. The Bitcoin ASIC Analogy: Will History Repeat?
+
+Bitcoin mining evolved from CPUs → GPUs → FPGAs → ASICs, with ASICs now dominating completely. Will LLM inference follow the same path?
+
+### Why Bitcoin ASICs Dominated Completely
+
+- **Single, fixed algorithm**: SHA-256 never changes
+- **Pure economics**: Only metric is hashes per watt per dollar
+- **No flexibility needed**: The workload is 100% predictable forever
+- **Winner-take-all**: Efficiency directly equals profit
+
+### Why LLM ASICs Won't Dominate as Completely
+
+| Factor | Bitcoin | LLMs |
+|--------|---------|------|
+| Algorithm stability | Fixed forever | Evolving (attention → MoE → SSM?) |
+| Workload variety | One operation | Many (different models, quantizations, batch sizes) |
+| Market maturity | 15+ years | ~3 years |
+| Upgrade cycle | Rare algorithm changes | New architectures yearly |
+
+### Where LLM ASICs Will Likely Dominate
+
+- **Edge devices** (phones, cars, IoT): ASICs will dominate—battery life is critical
+- **High-volume inference**: Running the same 7B model billions of times justifies custom silicon
+- **Commoditized models**: Once a model becomes "good enough" and stable (like Llama-class), ASICs become viable
+
+### Likely Pattern by Use Case
+
+| Use Case | Dominant Hardware |
+|----------|-------------------|
+| Training | GPUs (too dynamic) |
+| Large inference (cloud) | Mix of GPUs + specialized accelerators |
+| Small inference (edge) | ASICs (similar to Bitcoin) |
+
+### The Key Variable
+
+Architecture stability determines ASIC viability. If transformers remain the standard for 5+ years, ASICs will take over inference. If major shifts occur (like Mamba/SSMs gaining traction), GPU flexibility remains valuable.
+
+---
+
 *Generated: February 2026*
