@@ -11,6 +11,7 @@ Discussion notes and analysis on LLM infrastructure trends.
 5. Fragmented AGI future - data sovereignty forces tiered model
 6. Power bottleneck - China vs US/West 7-year race scenario
 7. Scaling limits - Moore's Law parallel, what if AGI doesn't scale
+8. Data wall - training data exhaustion, synthetic data collapse
 
 ## Files
 - `llm_forecast_discussion.md` - Full discussion in markdown

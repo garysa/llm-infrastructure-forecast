@@ -348,6 +348,59 @@ story.append(Paragraph("The Uncomfortable Question", styles['H3']))
 story.append(Paragraph("Current AI progress may be a <b>one-time windfall</b> from: (1) Transformer architecture, (2) Scale discovery, (3) Internet-scale training data. If no new paradigm emerges, we may be witnessing the <b>peak of this approach</b>, not the beginning of exponential takeoff.", styles['Body']))
 story.append(Spacer(1, 20))
 
+story.append(Spacer(1, 12))
+
+# Section 8
+story.append(Paragraph("8. The Data Wall: How Can OpenAI Continue Scaling?", styles['H2']))
+story.append(Paragraph("The fundamental problem: scaling requires exponentially more data, but high-quality training data is finite and already exhausted.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Numbers Don't Work", styles['H3']))
+data8 = [
+    ['Model', 'Training Tokens', 'Status'],
+    ['GPT-2 (2019)', '~10 billion', 'Abundant data'],
+    ['GPT-3 (2020)', '~300 billion', 'Plenty remaining'],
+    ['GPT-4 (2023)', '~13 trillion', 'Used most of internet'],
+    ['GPT-5 (2025?)', '~50+ trillion', "Doesn't exist"],
+]
+t8 = Table(data8, colWidths=[1.5*inch, 1.5*inch, 2*inch])
+t8.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, 3), colors.beige),
+    ('BACKGROUND', (0, 4), (-1, 4), colors.lightcoral),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t8)
+story.append(Paragraph("<b>Available high-quality internet text: ~10-15 trillion tokens. Annual new content: ~1-2 trillion.</b>", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("OpenAI's Attempted Solutions", styles['H3']))
+story.append(Paragraph("• <b>Synthetic data</b>: AI generates training data → model collapse risk, quality degrades", styles['MyBullet']))
+story.append(Paragraph("• <b>Licensed deals</b>: Reddit ($60M/yr), publishers → expensive, finite, legally contested", styles['MyBullet']))
+story.append(Paragraph("• <b>Multimodal</b>: Video/audio → different modality, doesn't help text reasoning", styles['MyBullet']))
+story.append(Paragraph("• <b>User data</b>: ChatGPT conversations → privacy laws, consent issues", styles['MyBullet']))
+story.append(Paragraph("• <b>RLHF quality</b>: Better curation → doesn't add new knowledge", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Uncomfortable Reality", styles['H3']))
+story.append(Paragraph("<b>OpenAI cannot continue the scaling approach</b> that made GPT-3→GPT-4 successful. Options: admit diminishing returns, pivot to efficiency, hope for algorithmic breakthroughs, or gamble on synthetic data.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("What This Means for AGI", styles['H3']))
+story.append(Paragraph("• <b>AGI via scaling is impossible</b>: Not enough data exists", styles['MyBullet']))
+story.append(Paragraph("• <b>Algorithmic breakthroughs required</b>: Fundamentally new approaches needed", styles['MyBullet']))
+story.append(Paragraph("• <b>China's compute advantage irrelevant</b>: Can't train what doesn't exist", styles['MyBullet']))
+story.append(Paragraph("• <b>Open source catches up</b>: Diminishing returns level the field", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The scaling era (2019-2024) may be over. What comes next is uncertain.", styles['Body']))
+story.append(Spacer(1, 20))
+
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))
 story.append(Paragraph("<i>See PNG files for all visualizations</i>", styles['Body']))
 

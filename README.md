@@ -46,6 +46,13 @@ Modeling scenarios where scaling breaks down:
 - **Four scenarios**: Optimistic (AGI), Moderate (3x), Pessimistic (plateau), Stagnation
 - **Key insight**: Current progress may be one-time windfall, not exponential takeoff
 
+### 8. The Data Wall: OpenAI's Scaling Problem
+Training data exhaustion analysis:
+- **GPT-4 used ~13T tokens**: Most of the high-quality internet
+- **GPT-5 would need ~50T+**: Doesn't exist
+- **Synthetic data trap**: Model collapse degrades quality each generation
+- **Conclusion**: Scaling era (2019-2024) may be over
+
 ## Files
 | File | Description |
 |------|-------------|

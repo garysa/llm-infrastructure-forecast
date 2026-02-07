@@ -648,4 +648,255 @@ Internet-scale training data (finite resource)</p>
 <p>If no new paradigm emerges, we may be witnessing the <strong>peak of
 this approach</strong>, not the beginning of exponential takeoff.</p>
 <hr />
+<h2 id="the-data-wall-how-can-openai-continue-scaling">8. The Data Wall:
+How Can OpenAI Continue Scaling?</h2>
+<p>The fundamental problem: scaling requires exponentially more data,
+but high-quality training data is finite and already exhausted.</p>
+<h3 id="the-numbers-dont-work">The Numbers Don’t Work</h3>
+<figure>
+<img src="data_wall.png" alt="Data Wall" />
+<figcaption aria-hidden="true">Data Wall</figcaption>
+</figure>
+<table>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Training Tokens</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GPT-2 (2019)</td>
+<td>~10 billion</td>
+<td>✓ Abundant data</td>
+</tr>
+<tr class="even">
+<td>GPT-3 (2020)</td>
+<td>~300 billion</td>
+<td>✓ Plenty remaining</td>
+</tr>
+<tr class="odd">
+<td>GPT-4 (2023)</td>
+<td>~13 trillion</td>
+<td>⚠ Used most of internet</td>
+</tr>
+<tr class="even">
+<td>GPT-5 (2025?)</td>
+<td>~50+ trillion</td>
+<td>❌ Doesn’t exist</td>
+</tr>
+<tr class="odd">
+<td>GPT-6 (2027?)</td>
+<td>~200+ trillion</td>
+<td>❌ Impossible</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Available high-quality text on the internet: ~10-15 trillion
+tokens</strong> <strong>Annual new content creation: ~1-2 trillion
+tokens</strong></p>
+<h3 id="data-sources-already-exhausted">Data Sources: Already
+Exhausted</h3>
+<figure>
+<img src="data_timeline.png" alt="Data Timeline" />
+<figcaption aria-hidden="true">Data Timeline</figcaption>
+</figure>
+<table>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Size (tokens)</th>
+<th>% Already Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Common Crawl (web)</td>
+<td>~10 trillion</td>
+<td>95%</td>
+</tr>
+<tr class="even">
+<td>Books (scanned)</td>
+<td>~2 trillion</td>
+<td>80%</td>
+</tr>
+<tr class="odd">
+<td>Wikipedia</td>
+<td>~100 billion</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td>GitHub (code)</td>
+<td>~1 trillion</td>
+<td>90%</td>
+</tr>
+<tr class="odd">
+<td>Scientific papers</td>
+<td>~500 billion</td>
+<td>70%</td>
+</tr>
+<tr class="even">
+<td>Reddit/Forums</td>
+<td>~800 billion</td>
+<td>85%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="openais-attempted-solutions">OpenAI’s Attempted Solutions</h3>
+<h4 id="synthetic-data-generation">1. Synthetic Data Generation</h4>
+<ul>
+<li>Train AI to generate training data for the next AI</li>
+<li><strong>Problem</strong>: Model collapse—quality degrades each
+generation</li>
+<li>Research shows 50%+ synthetic data causes rapid quality loss</li>
+<li>“Eating your own tail” doesn’t add new information</li>
+</ul>
+<h4 id="licensed-data-deals">2. Licensed Data Deals</h4>
+<ul>
+<li>Reddit: $60M/year deal</li>
+<li>News publishers: Various agreements</li>
+<li>Book publishers: Ongoing negotiations</li>
+<li><strong>Problem</strong>: Expensive, finite, legally contested</li>
+</ul>
+<h4 id="multimodal-expansion">3. Multimodal Expansion</h4>
+<ul>
+<li>Video (YouTube): Massive but different modality</li>
+<li>Audio (podcasts): Adds some text equivalent</li>
+<li>Images: Doesn’t help text reasoning</li>
+<li><strong>Problem</strong>: Not equivalent to text for language
+models</li>
+</ul>
+<h4 id="user-interaction-data">4. User Interaction Data</h4>
+<ul>
+<li>Billions of ChatGPT conversations</li>
+<li><strong>Problem</strong>: Privacy laws, user consent issues, legal
+risk</li>
+<li>EU likely to prohibit without explicit consent</li>
+</ul>
+<h4 id="rlhfquality-over-quantity">5. RLHF/Quality Over Quantity</h4>
+<ul>
+<li>Better curation of existing data</li>
+<li>Human feedback improves output quality</li>
+<li><strong>Problem</strong>: Doesn’t add new knowledge or
+capabilities</li>
+</ul>
+<h3 id="the-synthetic-data-trap">The Synthetic Data Trap</h3>
+<p>When models train on AI-generated content:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Generation</th>
+<th>Quality</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>100%</td>
+<td>Original human data</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>95%</td>
+<td>Slight degradation</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>88%</td>
+<td>Patterns simplify</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>78%</td>
+<td>Diversity collapses</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>65%</td>
+<td>Obvious artifacts</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>&lt;40%</td>
+<td>Unusable</td>
+</tr>
+</tbody>
+</table>
+<p>This is called <strong>model collapse</strong>—the AI equivalent of
+inbreeding.</p>
+<h3 id="post-data-wall-strategies-compared">Post-Data-Wall Strategies
+Compared</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Effectiveness</th>
+<th>Feasibility</th>
+<th>Risk</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>More compute</td>
+<td>Low</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr class="even">
+<td>Synthetic data</td>
+<td>Low</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Licensed data</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr class="even">
+<td>Multimodal</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr class="odd">
+<td>RLHF quality</td>
+<td>Medium</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr class="even">
+<td>Algorithmic breakthrough</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-uncomfortable-reality">The Uncomfortable Reality</h3>
+<p><strong>OpenAI cannot continue the scaling approach</strong> that
+made GPT-3→GPT-4 successful. The options are:</p>
+<ol type="1">
+<li><strong>Admit diminishing returns</strong>: Incremental improvements
+only</li>
+<li><strong>Pivot to efficiency</strong>: Smaller, better models
+(opposite of scaling)</li>
+<li><strong>Hope for breakthroughs</strong>: New architectures that need
+less data</li>
+<li><strong>Synthetic data gamble</strong>: Risk model collapse for
+potential gains</li>
+</ol>
+<h3 id="what-this-means-for-agi">What This Means for AGI</h3>
+<p>If data is the bottleneck: - <strong>AGI via scaling is
+impossible</strong>: Not enough data exists - <strong>Algorithmic
+breakthroughs required</strong>: Fundamentally new approaches -
+<strong>China’s compute advantage irrelevant</strong>: Can’t train what
+doesn’t exist - <strong>Open source catches up</strong>: Diminishing
+returns level the field</p>
+<p>The scaling era (2019-2024) may be over. What comes next is
+uncertain.</p>
+<hr />
 <p><em>Generated: February 2026</em></p>
