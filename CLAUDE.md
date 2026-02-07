@@ -10,6 +10,7 @@ Discussion notes and analysis on LLM infrastructure trends.
 4. Bitcoin ASIC analogy - comparing hardware evolution patterns
 5. Fragmented AGI future - data sovereignty forces tiered model
 6. Power bottleneck - China vs US/West 7-year race scenario
+7. Scaling limits - Moore's Law parallel, what if AGI doesn't scale
 
 ## Files
 - `llm_forecast_discussion.md` - Full discussion in markdown

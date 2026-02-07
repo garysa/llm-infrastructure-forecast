@@ -39,6 +39,13 @@ If power is the constraint, China has structural advantages:
 - **2029**: Potential compute parity if scaling laws hold
 - **Outcome**: Likely bifurcated AI world - neither achieves monopoly
 
+### 7. What If AGI Doesn't Scale? (Moore's Law Parallel)
+Modeling scenarios where scaling breaks down:
+- **Moore's Law template**: Exponential → slowdown → physical limits
+- **Binding constraints**: Data exhaustion, compute limits, algorithmic ceiling, energy wall
+- **Four scenarios**: Optimistic (AGI), Moderate (3x), Pessimistic (plateau), Stagnation
+- **Key insight**: Current progress may be one-time windfall, not exponential takeoff
+
 ## Files
 | File | Description |
 |------|-------------|

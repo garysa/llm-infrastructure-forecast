@@ -246,4 +246,94 @@ Neither achieves global AGI monopoly. The "winner" depends on which approach pro
 
 ---
 
+## 7. What If AGI Doesn't Scale? The Moore's Law Parallel
+
+The assumption that "more compute = smarter AI" may break down, just as Moore's Law eventually hit physical limits. This section models scenarios where scaling fails.
+
+### The Moore's Law Template
+
+![Scaling Limits](scaling_limits.png)
+
+Moore's Law history shows a pattern that AI may follow:
+- **1970-2010**: Exponential scaling held (transistors doubled every 2 years)
+- **2010-2025**: Dennard scaling ended; gains slowed to ~3 year doubling
+- **2025+**: Physical limits (atomic scale) cause further slowdown
+
+### AI Scaling: Current State
+
+| Year | Model | Capability Leap |
+|------|-------|-----------------|
+| 2017 | Transformer | Architecture breakthrough |
+| 2020 | GPT-3 | Scale breakthrough (175B params) |
+| 2023 | GPT-4 | Multimodal + reasoning |
+| 2024-26 | Current | Incremental gains, diminishing returns visible |
+
+### Four Scenarios for 2026-2036
+
+![Binding Constraints](binding_constraints.png)
+
+| Scenario | Assumption | 2036 Outcome |
+|----------|------------|--------------|
+| **Optimistic** | Scaling continues | AGI achieved |
+| **Moderate** | Moore's Law pattern slowdown | ~3x current capability, no AGI |
+| **Pessimistic** | Hard ceiling (data exhaustion) | ~1.5x current, plateau |
+| **Plateau** | Brief gains then stagnation | Near-current levels, no AGI |
+
+### The Binding Constraints
+
+Multiple factors could independently halt progress:
+
+1. **Training Data Exhaustion**
+   - Internet-scale text already consumed
+   - Synthetic data has diminishing returns
+   - Human-generated content growth is linear, not exponential
+
+2. **Compute Limits**
+   - Power constraints (see Section 6)
+   - Chip fabrication limits
+   - Cost becomes prohibitive
+
+3. **Algorithmic Ceiling**
+   - Transformer architecture may be near-optimal for current approach
+   - No obvious successor paradigm
+   - Fundamental limits on what pattern matching can achieve
+
+4. **Energy/Power Wall**
+   - Training runs already consuming city-scale power
+   - Cannot scale 100x without new power infrastructure
+
+### The Critical Insight
+
+**Capability = Minimum(Compute, Data, Algorithms, Energy)**
+
+Progress stops when ANY constraint binds. Even if compute scales, data exhaustion or algorithmic limits could halt progress.
+
+### Historical Precedents for Stalled Scaling
+
+| Technology | Scaling Period | What Stopped It |
+|------------|---------------|-----------------|
+| Moore's Law | 1970-2010 | Physics (atomic limits) |
+| Airplane Speed | 1910-1970 | Sonic boom, fuel efficiency |
+| Nuclear Power | 1950-1980 | Safety, regulation, economics |
+| Fusion Power | 1960-present | Plasma containment physics |
+
+### Implications If Scaling Fails
+
+- **No AGI by 2036**: Current LLMs represent the plateau
+- **Efficiency becomes paramount**: Focus shifts to doing more with less
+- **Specialization wins**: Domain-specific models outperform general ones
+- **China's power advantage irrelevant**: If scaling doesn't help, brute force fails
+- **Talent matters more**: Algorithmic breakthroughs become the only path forward
+
+### The Uncomfortable Question
+
+Current AI progress may be a **one-time windfall** from:
+1. Transformer architecture (2017)
+2. Scale discovery (2020)
+3. Internet-scale training data (finite resource)
+
+If no new paradigm emerges, we may be witnessing the **peak of this approach**, not the beginning of exponential takeoff.
+
+---
+
 *Generated: February 2026*

@@ -301,8 +301,55 @@ story.append(Paragraph("Likely Outcome", styles['H3']))
 story.append(Paragraph("A bifurcated AI world by 2033: Chinese AI sphere (raw power, state-controlled, closed) vs Western AI sphere (efficiency-focused, distributed, allied nations pooling resources). Neither achieves global AGI monopoly.", styles['Body']))
 story.append(Spacer(1, 20))
 
+story.append(Spacer(1, 12))
+
+# Section 7
+story.append(Paragraph("7. What If AGI Doesn't Scale? The Moore's Law Parallel", styles['H2']))
+story.append(Paragraph("The assumption that 'more compute = smarter AI' may break down, just as Moore's Law eventually hit physical limits.", styles['Body']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Moore's Law Template", styles['H3']))
+story.append(Paragraph("• <b>1970-2010</b>: Exponential scaling held (transistors doubled every 2 years)", styles['MyBullet']))
+story.append(Paragraph("• <b>2010-2025</b>: Dennard scaling ended; gains slowed to ~3 year doubling", styles['MyBullet']))
+story.append(Paragraph("• <b>2025+</b>: Physical limits (atomic scale) cause further slowdown", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("Four Scenarios for 2026-2036", styles['H3']))
+data7 = [
+    ['Scenario', 'Assumption', '2036 Outcome'],
+    ['Optimistic', 'Scaling continues', 'AGI achieved'],
+    ['Moderate', "Moore's Law pattern", '~3x current, no AGI'],
+    ['Pessimistic', 'Hard ceiling', '~1.5x current, plateau'],
+    ['Plateau', 'Brief gains then stagnation', 'Near-current, no AGI'],
+]
+t7 = Table(data7, colWidths=[1.5*inch, 2*inch, 2*inch])
+t7.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, -1), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+]))
+story.append(t7)
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Binding Constraints", styles['H3']))
+story.append(Paragraph("Capability = Minimum(Compute, Data, Algorithms, Energy). Progress stops when ANY constraint binds:", styles['Body']))
+story.append(Paragraph("• <b>Training data exhaustion</b>: Internet-scale text already consumed", styles['MyBullet']))
+story.append(Paragraph("• <b>Compute limits</b>: Power constraints, chip fab limits, prohibitive costs", styles['MyBullet']))
+story.append(Paragraph("• <b>Algorithmic ceiling</b>: Transformer may be near-optimal, no successor paradigm", styles['MyBullet']))
+story.append(Paragraph("• <b>Energy wall</b>: Training runs consuming city-scale power", styles['MyBullet']))
+story.append(Spacer(1, 6))
+
+story.append(Paragraph("The Uncomfortable Question", styles['H3']))
+story.append(Paragraph("Current AI progress may be a <b>one-time windfall</b> from: (1) Transformer architecture, (2) Scale discovery, (3) Internet-scale training data. If no new paradigm emerges, we may be witnessing the <b>peak of this approach</b>, not the beginning of exponential takeoff.", styles['Body']))
+story.append(Spacer(1, 20))
+
 story.append(Paragraph("<i>Generated: February 2026</i>", styles['Body']))
-story.append(Paragraph("<i>See PNG files for visualizations: agi_future_tiers, agi_market_projection, power_bottleneck, china_vs_us_comparison</i>", styles['Body']))
+story.append(Paragraph("<i>See PNG files for all visualizations</i>", styles['Body']))
 
 doc.build(story)
 print("PDF created successfully!")

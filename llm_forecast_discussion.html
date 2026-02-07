@@ -473,4 +473,179 @@ allied nations pooling resources</p>
 <p>Neither achieves global AGI monopoly. The “winner” depends on which
 approach proves more effective—and we won’t know until it happens.</p>
 <hr />
+<h2 id="what-if-agi-doesnt-scale-the-moores-law-parallel">7. What If AGI
+Doesn’t Scale? The Moore’s Law Parallel</h2>
+<p>The assumption that “more compute = smarter AI” may break down, just
+as Moore’s Law eventually hit physical limits. This section models
+scenarios where scaling fails.</p>
+<h3 id="the-moores-law-template">The Moore’s Law Template</h3>
+<figure>
+<img src="scaling_limits.png" alt="Scaling Limits" />
+<figcaption aria-hidden="true">Scaling Limits</figcaption>
+</figure>
+<p>Moore’s Law history shows a pattern that AI may follow: -
+<strong>1970-2010</strong>: Exponential scaling held (transistors
+doubled every 2 years) - <strong>2010-2025</strong>: Dennard scaling
+ended; gains slowed to ~3 year doubling - <strong>2025+</strong>:
+Physical limits (atomic scale) cause further slowdown</p>
+<h3 id="ai-scaling-current-state">AI Scaling: Current State</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Model</th>
+<th>Capability Leap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2017</td>
+<td>Transformer</td>
+<td>Architecture breakthrough</td>
+</tr>
+<tr class="even">
+<td>2020</td>
+<td>GPT-3</td>
+<td>Scale breakthrough (175B params)</td>
+</tr>
+<tr class="odd">
+<td>2023</td>
+<td>GPT-4</td>
+<td>Multimodal + reasoning</td>
+</tr>
+<tr class="even">
+<td>2024-26</td>
+<td>Current</td>
+<td>Incremental gains, diminishing returns visible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="four-scenarios-for-2026-2036">Four Scenarios for 2026-2036</h3>
+<figure>
+<img src="binding_constraints.png" alt="Binding Constraints" />
+<figcaption aria-hidden="true">Binding Constraints</figcaption>
+</figure>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 33%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>Assumption</th>
+<th>2036 Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Optimistic</strong></td>
+<td>Scaling continues</td>
+<td>AGI achieved</td>
+</tr>
+<tr class="even">
+<td><strong>Moderate</strong></td>
+<td>Moore’s Law pattern slowdown</td>
+<td>~3x current capability, no AGI</td>
+</tr>
+<tr class="odd">
+<td><strong>Pessimistic</strong></td>
+<td>Hard ceiling (data exhaustion)</td>
+<td>~1.5x current, plateau</td>
+</tr>
+<tr class="even">
+<td><strong>Plateau</strong></td>
+<td>Brief gains then stagnation</td>
+<td>Near-current levels, no AGI</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-binding-constraints">The Binding Constraints</h3>
+<p>Multiple factors could independently halt progress:</p>
+<ol type="1">
+<li><strong>Training Data Exhaustion</strong>
+<ul>
+<li>Internet-scale text already consumed</li>
+<li>Synthetic data has diminishing returns</li>
+<li>Human-generated content growth is linear, not exponential</li>
+</ul></li>
+<li><strong>Compute Limits</strong>
+<ul>
+<li>Power constraints (see Section 6)</li>
+<li>Chip fabrication limits</li>
+<li>Cost becomes prohibitive</li>
+</ul></li>
+<li><strong>Algorithmic Ceiling</strong>
+<ul>
+<li>Transformer architecture may be near-optimal for current
+approach</li>
+<li>No obvious successor paradigm</li>
+<li>Fundamental limits on what pattern matching can achieve</li>
+</ul></li>
+<li><strong>Energy/Power Wall</strong>
+<ul>
+<li>Training runs already consuming city-scale power</li>
+<li>Cannot scale 100x without new power infrastructure</li>
+</ul></li>
+</ol>
+<h3 id="the-critical-insight">The Critical Insight</h3>
+<p><strong>Capability = Minimum(Compute, Data, Algorithms,
+Energy)</strong></p>
+<p>Progress stops when ANY constraint binds. Even if compute scales,
+data exhaustion or algorithmic limits could halt progress.</p>
+<h3 id="historical-precedents-for-stalled-scaling">Historical Precedents
+for Stalled Scaling</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Technology</th>
+<th>Scaling Period</th>
+<th>What Stopped It</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Moore’s Law</td>
+<td>1970-2010</td>
+<td>Physics (atomic limits)</td>
+</tr>
+<tr class="even">
+<td>Airplane Speed</td>
+<td>1910-1970</td>
+<td>Sonic boom, fuel efficiency</td>
+</tr>
+<tr class="odd">
+<td>Nuclear Power</td>
+<td>1950-1980</td>
+<td>Safety, regulation, economics</td>
+</tr>
+<tr class="even">
+<td>Fusion Power</td>
+<td>1960-present</td>
+<td>Plasma containment physics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="implications-if-scaling-fails">Implications If Scaling
+Fails</h3>
+<ul>
+<li><strong>No AGI by 2036</strong>: Current LLMs represent the
+plateau</li>
+<li><strong>Efficiency becomes paramount</strong>: Focus shifts to doing
+more with less</li>
+<li><strong>Specialization wins</strong>: Domain-specific models
+outperform general ones</li>
+<li><strong>China’s power advantage irrelevant</strong>: If scaling
+doesn’t help, brute force fails</li>
+<li><strong>Talent matters more</strong>: Algorithmic breakthroughs
+become the only path forward</li>
+</ul>
+<h3 id="the-uncomfortable-question">The Uncomfortable Question</h3>
+<p>Current AI progress may be a <strong>one-time windfall</strong> from:
+1. Transformer architecture (2017) 2. Scale discovery (2020) 3.
+Internet-scale training data (finite resource)</p>
+<p>If no new paradigm emerges, we may be witnessing the <strong>peak of
+this approach</strong>, not the beginning of exponential takeoff.</p>
+<hr />
 <p><em>Generated: February 2026</em></p>
