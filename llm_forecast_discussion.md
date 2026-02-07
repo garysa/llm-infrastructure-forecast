@@ -172,4 +172,78 @@ Just as Google Search is "free" for public use while enterprises pay for private
 
 ---
 
+## 6. The Power Bottleneck: Does China Win the 7-Year Race?
+
+If power becomes the primary constraint on AI scaling, geopolitical dynamics shift dramatically. China's infrastructure advantages could prove decisive.
+
+### The Power Problem
+
+- **Current AI data center**: 50-100 MW typical
+- **Next-gen training clusters**: 500 MW - 1 GW required
+- **GPT-5 class training run**: Estimated 100+ MW sustained for months
+- **AGI-scale compute**: Potentially 5-10 GW dedicated facilities
+
+For context: 1 GW = roughly one nuclear reactor's output
+
+### Why Power is the Bottleneck
+
+| Constraint | Impact |
+|------------|--------|
+| Grid capacity | Most grids can't deliver GW-scale to single sites |
+| Permitting | New power plants take 5-10 years in the West |
+| Transmission | Building new high-voltage lines faces NIMBY resistance |
+| Renewable intermittency | AI training needs 24/7 baseload, not variable solar/wind |
+
+### China's Structural Advantages
+
+| Factor | China | US/West |
+|--------|-------|---------|
+| Permitting speed | Months | 5-10 years |
+| State coordination | Central planning | Fragmented jurisdictions |
+| Grid buildout | Rapid expansion | Aging infrastructure |
+| Nuclear expansion | 150+ reactors planned | Regulatory paralysis |
+| Coal availability | Abundant (less clean) | Politically constrained |
+| Land acquisition | State-controlled | Private property rights |
+
+### 7-Year Evolution Scenario (2026-2033)
+
+**Year 1-2 (2026-2027):**
+- US leads on model architecture and software
+- Power constraints begin limiting US scaling
+- China breaks ground on dedicated AI power plants
+
+**Year 3-4 (2028-2029):**
+- US data centers hitting grid limits
+- China's new nuclear/coal plants coming online
+- Compute parity approaches despite US chip lead
+
+**Year 5-7 (2030-2033):**
+- China achieves raw compute advantage through power availability
+- US forced into efficiency-focused approach
+- Winner determined by whether algorithms or compute matter more
+
+### The Critical Question
+
+**If scaling laws hold** (more compute = better AI): China wins through brute force power advantage
+
+**If algorithmic breakthroughs dominate**: US/West wins through talent and research ecosystem
+
+### Counterarguments (Why US Could Still Win)
+
+- **Chip restrictions**: China still behind on cutting-edge chips (NVIDIA H100/B100 banned)
+- **Talent**: Top AI researchers still concentrated in US
+- **Efficiency gains**: US forced to innovate on efficiency (smaller, better models)
+- **Allies**: Japan, Taiwan, Korea, EU add to Western compute pool
+- **Private capital**: US tech giants can outspend Chinese state in some scenarios
+
+### Likely Outcome
+
+A bifurcated AI world by 2033:
+- **Chinese AI sphere**: Raw power advantage, state-controlled, closed ecosystem
+- **Western AI sphere**: Efficiency-focused, distributed, allied nations pooling resources
+
+Neither achieves global AGI monopoly. The "winner" depends on which approach proves more effective—and we won't know until it happens.
+
+---
+
 *Generated: February 2026*

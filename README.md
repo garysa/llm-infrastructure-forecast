@@ -32,6 +32,13 @@ Data sovereignty will force a tiered model:
 - **Tier 3 (Regulated)**: Healthcare, finance, legal - certified models
 - **Tier 4 (Sovereign)**: Government/defense, air-gapped
 
+### 6. The Power Bottleneck: China vs US (7-Year Race)
+If power is the constraint, China has structural advantages:
+- **China**: Fast permitting, central planning, 150+ nuclear reactors planned
+- **US/West**: Grid constraints, 5-10 year permitting, aging infrastructure
+- **2029**: Potential compute parity if scaling laws hold
+- **Outcome**: Likely bifurcated AI world - neither achieves monopoly
+
 ## Files
 | File | Description |
 |------|-------------|
